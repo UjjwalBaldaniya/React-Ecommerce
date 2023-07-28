@@ -1,0 +1,146 @@
+.productsWrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin: 50px;
+    padding-bottom: 2rem;
+}
+
+.cart {
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    padding: 25px;
+    margin: auto;
+}
+
+.cart img {
+    height: 100px;
+}
+
+.cart h4 {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.cart h5 {
+    margin-top: 5px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: #10558d;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0c7db1;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1280px) {
+    .productsWrapper {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 30px;
+    }
+
+    .cart {
+        width: 220px;
+        margin: auto;
+    }
+
+    .cart img {
+        height: 70px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .productsWrapper {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 30px;
+    }
+
+    .cart {
+        width: 180px;
+        margin: auto;
+    }
+
+    .cart img {
+        height: 70px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .productsWrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 30px;
+    }
+
+    .cart {
+        width: 180px;
+        margin: auto;
+    }
+
+    .cart img {
+        height: 70px;
+    }
+
+    /* .btn {
+        padding: 7px 20px;
+    } */
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .productsWrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 40px;
+    }
+
+    .cart {
+        width: 180px;
+        margin: auto;
+    }
+
+    .cart img {
+        height: 50px;
+    }
+
+    .btn {
+        padding: 7px 20px;
+    }
+}
+
+/* Extra small devices (phones, 414px and down) */
+@media only screen and (max-width: 414px) {
+    .productsWrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 40px;
+    }
+
+    .cart {
+        width: 300px;
+    }
+
+    .cart img {
+        height: 80px;
+    }
+}
