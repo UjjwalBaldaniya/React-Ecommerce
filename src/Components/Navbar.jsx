@@ -19,7 +19,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div class="profile">
-                    <Link to="/cart"><AiOutlineShoppingCart size={"40px"} style={{ color: "#10558d" }} /></Link>
+                    <AiOutlineShoppingCart size={"40px"} style={{ color: "#10558d" }} />
                 </div>
             </div>
         </>

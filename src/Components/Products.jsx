@@ -1,25 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Products = ({ apiData }) => {
-
-    const [productID, setProductID] = useState();
-
-    const productClick = (id) => {
-        setProductID(id)
-        console.log(id);
-    }
-    
+const Products = ({ id, key, image, category, price, title }) => {
     return (
         <>
-            <div class="productsWrapper">
-                {apiData.map((element) => (
-                    <div class="cart" key={element.id}>
-                        <img src={element.image} alt={element.title} />
-                        <h4>{element.category}</h4>
-                        <h5>{element.price}</h5>
-                        <button class="btn" onClick={() => productClick(element.id)}>Buy</button>
-                    </div>
-                ))}
+            <div class="cart" key={key}>
+                <img src={image} alt={title} />
+                <h4>{category}</h4>
+                <h5>{price}</h5>
+                <Link to={`/product/${id}`}><button class="btn">Buy</button></Link>
             </div>
         </>
     )
