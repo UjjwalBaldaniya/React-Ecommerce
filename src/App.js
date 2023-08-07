@@ -7,6 +7,7 @@ import Services from "./Pages/Services";
 import Navbar from "./Components/Navbar";
 import Cart from "./Components/Cart";
 import Footer from "./Components/Footer";
+import Error from "./Pages/Error";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/product/:id" element={<Cart />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </BrowserRouter>
