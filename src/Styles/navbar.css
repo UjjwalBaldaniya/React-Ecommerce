@@ -38,6 +38,21 @@
   margin-right: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.logout {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 2rem;
+  color: #10558d;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: #0c7db1;
+  font-weight: bold;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -45,10 +60,12 @@
   .logo a {
     font-size: 20px;
   }
+
   .menu ul li a {
     font-size: 15px;
     padding: 0 20px;
   }
+
   .profile {
     margin-right: 1rem;
   }
@@ -59,37 +76,44 @@
   .logo a {
     font-size: 1.3rem;
   }
+
   .menu ul li a {
     font-size: 15px;
     padding: 0 20px;
   }
+
   .profile {
     margin-right: 1rem;
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {  
+@media only screen and (max-width: 600px) {
   .logo a {
     font-size: 1.5rem;
-   margin-left: 1rem;
-     
+    margin-left: 1rem;
+
   }
-  .menu{
+
+  .menu {
     display: none;
   }
+
   .profile {
     margin-right: 1rem;
   }
 }
+
 /* Extra small devices (phones, 414px and down) */
 @media only screen and (max-width: 414px) {
   .logo a {
     font-size: 1.3rem;
   }
-  .menu{
+
+  .menu {
     display: none;
   }
+
   .profile {
     margin-right: 1rem;
   }

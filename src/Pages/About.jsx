@@ -4,20 +4,20 @@ import '../Styles/about.css'
 const About = () => {
   return (
     <>
-      <div class="about">
-        <div class="container2">
-          <div class="content1">
-            <div class="about_image">
+      <div className="about">
+        <div className="container2">
+          <div className="content1">
+            <div className="about_image">
               <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg"
                 alt="profile_picture" />
-              <div class="brands">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-square-twitter"></i>
+              <div className="brands">
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-square-twitter"></i></a>
               </div>
             </div>
-            <div class="about-info">
-              <h1 class="about-title">About Us</h1>
+            <div className="about-info">
+              <h1 className="about-title">About Us</h1>
               <h1>Owner of ABC Fashion</h1>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores qui fugiat delectus
                 aliquam laboriosam! Corporis, maxime natus, omnis fuga sint dignissimos labore, ab hic
@@ -25,7 +25,7 @@ const About = () => {
                 magnam incidunt at dolorem! A distinctio nesciunt culpa cupiditate, quia aliquid.
                 Voluptate numquam optio, illo minima iste neque soluta cupiditate impedit. Placeat
                 fugiat, doloremque veritatis natus architecto.</p>
-              <button class="btn">Read More</button>
+              <button className="btn">Read More</button>
             </div>
           </div>
         </div>

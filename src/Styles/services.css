@@ -47,3 +47,24 @@
     text-align: left;
     margin-top: 10px;
 }
+
+.adiv {
+    margin-top: 25px;
+}
+
+.atag {
+    border: none;
+    outline: none;
+    background: #10558d;
+    padding: 9px 25px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 13px;
+}
+
+.atag:hover {
+    background: #0c7db1;
+}

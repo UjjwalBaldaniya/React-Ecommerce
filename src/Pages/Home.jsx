@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import '../Styles/home.css'
 import Products from "../Components/Products";
 import Loader from "../Components/Loader";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
     const [apiData, setApiData] = useState([]);
@@ -25,9 +26,9 @@ const Home = () => {
         <>
             <div>
                 {loading ? <Loader /> :
-                    <div class="productsWrapper">
+                    <div className="productsWrapper">
                         {apiData.map((element) => (
-                            <Products id={element.id} key={element.id} image={element.image} category={element.category} price={element.price} title={element.title} />
+                            <Products id={element.id} keyId={element.id} image={element.image} category={element.category} price={element.price} title={element.title} />
                         ))}
                     </div>
                 }

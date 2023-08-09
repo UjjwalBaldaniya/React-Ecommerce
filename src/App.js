@@ -8,6 +8,8 @@ import Navbar from "./Components/Navbar";
 import Cart from "./Components/Cart";
 import Footer from "./Components/Footer";
 import Error from "./Pages/Error";
+import Login from "./Pages/Login";
+import BlankPage from "./Components/BlankPage";
 
 function App() {
   return (
@@ -15,12 +17,16 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/product/:id" element={<Cart />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/" element={<BlankPage />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/home/product/:id" element={<Cart />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -8,47 +8,55 @@ import Meesho from '../Images/meesho.jpeg'
 const Services = () => {
     return (
         <>
-            <div class="service">
-                <div class="container3">
-                    <div class="service-heading">
+            <div className="service">
+                <div className="container3">
+                    <div className="service-heading">
                         <h1>Our Services</h1>
                     </div>
-                    <div class="service-cart">
-                        <div class="product-cart">
+                    <div className="service-cart">
+                        <div className="product-cart">
                             <img src={Flipkart} alt="img" />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum itaque,
                                 iusto perferendis ullam doloremque veritatis omnis corporis voluptatem debitis vitae
                                 dolorum? Quibusdam autem perferendis odio neque distinctio. Natus, perspiciatis fuga,
                                 exercitationem voluptate neque est modi necessitatibus aperiam dolorum delectus adipisci
                                 quo magni. Impedit quam veritatis, dolorum ad quas quisquam!</p>
-                            <button class="btn">Shopping now</button>
+                            <div className="adiv">
+                                <a href="https://www.flipkart.com/" target="_blank" rel="noreferrer" className="atag">Shopping now</a>
+                            </div>
                         </div>
-                        <div class="product-cart">
+                        <div className="product-cart">
                             <img src={Myntra} alt="img" />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum itaque,
                                 iusto perferendis ullam doloremque veritatis omnis corporis voluptatem debitis vitae
                                 dolorum? Quibusdam autem perferendis odio neque distinctio. Natus, perspiciatis fuga,
                                 exercitationem voluptate neque est modi necessitatibus aperiam dolorum delectus adipisci
                                 quo magni. Impedit quam veritatis, dolorum ad quas quisquam!</p>
-                            <button class="btn">Shopping now</button>
+                            <div className="adiv">
+                                <a href="https://www.myntra.com/" target="_blank" rel="noreferrer" className="atag">Shopping now</a>
+                            </div>
                         </div>
-                        <div class="product-cart">
+                        <div className="product-cart">
                             <img src={Meesho} alt="img" />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum itaque,
                                 iusto perferendis ullam doloremque veritatis omnis corporis voluptatem debitis vitae
                                 dolorum? Quibusdam autem perferendis odio neque distinctio. Natus, perspiciatis fuga,
                                 exercitationem voluptate neque est modi necessitatibus aperiam dolorum delectus adipisci
                                 quo magni. Impedit quam veritatis, dolorum ad quas quisquam!</p>
-                            <button class="btn">Shopping now</button>
+                            <div className="adiv">
+                                <a href="https://www.meesho.com/" target="_blank" rel="noreferrer" className="atag">Shopping now</a>
+                            </div>
                         </div>
-                        <div class="product-cart">
+                        <div className="product-cart">
                             <img src={Amazon} alt="img" />
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptatum itaque,
                                 iusto perferendis ullam doloremque veritatis omnis corporis voluptatem debitis vitae
                                 dolorum? Quibusdam autem perferendis odio neque distinctio. Natus, perspiciatis fuga,
                                 exercitationem voluptate neque est modi necessitatibus aperiam dolorum delectus adipisci
                                 quo magni. Impedit quam veritatis, dolorum ad quas quisquam!</p>
-                            <button class="btn">Shopping now</button>
+                            <div className="adiv">
+                                <a href="https://www.amazon.in/" target="_blank" rel="noreferrer" className="atag">Shopping now</a>
+                            </div>
                         </div>
                     </div>
                 </div>

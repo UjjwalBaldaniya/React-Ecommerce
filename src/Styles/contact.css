@@ -56,7 +56,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .title h1 {
@@ -99,6 +98,6 @@
     border: 1px solid black;
 }
 
-.btn {
-    margin-top: 15px;
+.contact-btn {
+    width: 20%;
 }
