@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import '../Styles/home.css'
-import Products from "../Components/Products";
-import Loader from "../Components/Loader";
 import { useNavigate } from "react-router-dom";
-import CatagorySection from "../Components/CategorySection";
+import CatagorySection from "./CategorySection";
+import Loader from "./Loader";
+import Products from "./Products";
 
-const Home = () => {
+const WomensClothings = () => {
     const navigate = useNavigate()
-    const [apiData, setApiData] = useState([]);
+    const [womensClothings, setWomensClothings] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -15,9 +14,10 @@ const Home = () => {
             try {
                 const res = await fetch("https://fakestoreapi.com/products")
                 const data = await res.json()
-                setApiData(data)
+                const womensClothing = data.filter((element) => element.category === "women's clothing")
+                setWomensClothings(womensClothing)
                 setLoading(false);
-                // console.log(data);
+                console.log(data);
             } catch (error) {
                 console.log(error);
             }
@@ -35,7 +35,7 @@ const Home = () => {
                 <CatagorySection />
                 {loading ? <Loader /> :
                     <div className="productsWrapper">
-                        {apiData.map((element) => (
+                        {womensClothings.map((element) => (
                             <Products id={element.id} keyId={element.id} image={element.image} category={element.category} price={element.price} title={element.title} handleClick={() => handleClick(element.id)} />
                         ))}
                     </div>
@@ -45,4 +45,4 @@ const Home = () => {
     )
 };
 
-export default Home;
+export default WomensClothings;

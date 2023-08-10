@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Outlet, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Products from "./Products";
 import '../Styles/home.css'
 import Loader from "./Loader";
@@ -26,7 +26,6 @@ const Cart = () => {
     return (
         <>
             <div>
-                <p>Cart</p>
                 {loading ? <Loader /> :
                     <div className="productsWrapper">
                         <Products id={productData.id} keyId={productData.id} image={productData.image} category={productData.category} price={productData.price} title={productData.title} />

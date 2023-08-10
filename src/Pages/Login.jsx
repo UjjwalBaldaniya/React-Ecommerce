@@ -28,17 +28,13 @@ const Login = () => {
         localStorage.setItem('user', JSON.stringify(inputField));
     }
 
-    const disable = () => {
-        return
-    }
-
     return (
         <>
             <div className="employee-form">
-                <div class="container">
-                    <h1 class="title">Log In</h1>
+                <div class="login_container">
+                    <h1 class="login_title">Log In</h1>
 
-                    <form id="form" onSubmit={handleSubmit}>
+                    <form className="login_form" onSubmit={handleSubmit}>
                         <div class="input-div">
                             <label>Email id :- </label>
                             <input type="email" placeholder="enter email..." name="email" value={inputField.email} onChange={handleChange} />
@@ -47,7 +43,7 @@ const Login = () => {
                             <label>Password :- </label>
                             <input type="password" placeholder="enter password..." name="password" value={inputField.password} onChange={handleChange} />
                         </div>
-                        <button type="submit" className="btn" disabled={!inputField.password.length}>Login</button>
+                        <button type="submit" className="login_btn" disabled={!inputField.password.length}>Login</button>
                     </form>
                 </div>
             </div>

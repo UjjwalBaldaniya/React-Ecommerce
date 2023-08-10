@@ -1,0 +1,26 @@
+.catagory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+    background-color: gainsboro;
+}
+
+.catagory_list {
+    width: 50%;
+}
+
+.catagory ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.catagory ul li {
+    cursor: pointer;
+}
+
+.catagory ul li a {
+    color: black;
+}

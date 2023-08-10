@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import '../Styles/navbar.css'
 import { Link, useNavigate } from "react-router-dom";
-import { AiOutlineLogout } from "react-icons/ai";
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -28,7 +27,6 @@ const Navbar = () => {
                 <div className="logout">
                     <h2 onClick={handleClick}>Log Out</h2>
                 </div>
-
             </div>
         </>
     )
